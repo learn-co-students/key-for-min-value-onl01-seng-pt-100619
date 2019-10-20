@@ -7,7 +7,7 @@ def key_for_min_value(name_hash)
   key_associated_with_minimum_value = nil 
   
   name_hash.collect do |key,value|
-    if minimum_value == nil || value < minimum_value
+    if minimum_value = nil || value < minimum_value
       minimum_value = value
       key_associated_with_minimum_value = key
     end
